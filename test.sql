@@ -1,1 +1,0 @@
-select dupa from dual;

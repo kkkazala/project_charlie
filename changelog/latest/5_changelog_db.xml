@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
+
+
+      <!-- BEGIN: change_permissions_on_role -->
+<!--  <changeSet id="change_permissions_on_role" author="momen" runOnChange="true"> -->
+<!--    <sqlFile splitStatements="false" path="./latest/procedure/change_permissions_on_role.sql" encoding="UTF-8" stripComments="false" /> -->
+<!--  </changeSet> -->
+  <!-- END: change_permissions_on_role -->
+
+
+</databaseChangeLog>
