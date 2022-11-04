@@ -1,9 +1,9 @@
 --liquibase formatted sql
---changeset kjagiello:PROGRAMS2 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:true
+--changeset kjagiello:PROGRAMS5 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:true
 --rollback drop table PROGRAMS;
 CREATE TABLE PROGRAMS
 (
-   ID              NUMBER NOT NULL,
+   ID              NUMBER GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1)  PRIMARY KEY,
    MODEL_ID        NUMBER NOT NULL,
    ORGANIZATION_ID NUMBER NOT NULL,
    DATE_FROM       DATE,

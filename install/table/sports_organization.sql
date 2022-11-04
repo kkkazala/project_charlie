@@ -1,9 +1,9 @@
 --liquibase formatted sql
---changeset kjagiello:SPORTS_ORGANIZATIONS2 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:true
+--changeset kjagiello:SPORTS_ORGANIZATIONS5 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:true
 --rollback drop table SPORTS_ORGANIZATIONS;
 CREATE TABLE SPORTS_ORGANIZATIONS
 (
-   ID          NUMBER        NOT NULL,
+   ID          NUMBER GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1)  PRIMARY KEY,
    NAME        VARCHAR2(150) NOT NULL,
    VAT         VARCHAR2(100),
    NATIONALITY VARCHAR2(100)

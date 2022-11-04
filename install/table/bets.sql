@@ -1,9 +1,9 @@
 --liquibase formatted sql
---changeset kjagiello:BETS2 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:true
+--changeset kjagiello:BETS5 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:true
 --rollback drop table BETS;
 CREATE TABLE BETS
 (
-   ID              NUMBER NOT NULL,
+   ID              NUMBER GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1)  PRIMARY KEY,
    AMOUNT          NUMBER NOT NULL,
    MULTIPLIER      NUMBER NOT NULL,
    DATE_OF_BET     DATE,

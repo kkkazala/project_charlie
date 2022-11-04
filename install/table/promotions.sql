@@ -1,9 +1,9 @@
 --liquibase formatted sql
---changeset kjagiello:PROMOTIONS2 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:true
+--changeset kjagiello:PROMOTIONS5 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:true
 --rollback drop table PROMOTIONS;
 CREATE TABLE PROMOTIONS
 (
-   ID                   NUMBER        NOT NULL,
+   ID                   NUMBER GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1)  PRIMARY KEY,
    NAME                 VARCHAR2(150) NOT NULL,
    PROMOTION_MULTIPLIER NUMBER        NOT NULL
 );
