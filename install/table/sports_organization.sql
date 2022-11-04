@@ -1,3 +1,6 @@
+--liquibase formatted sql
+--changeset kjagiello:SPORTS_ORGANIZATIONS failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:false
+--rollback drop table SPORTS_ORGANIZATIONS;
 CREATE TABLE SPORTS_ORGANIZATIONS
 (
    ID          NUMBER        NOT NULL,

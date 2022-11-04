@@ -1,4 +1,6 @@
 --liquibase formatted sql
+--changeset kjagiello:MODELS failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:false
+--rollback drop table MODELS;
 CREATE TABLE MODELS
 (
    ID      NUMBER         NOT NULL,

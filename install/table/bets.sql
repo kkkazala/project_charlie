@@ -1,4 +1,6 @@
 --liquibase formatted sql
+--changeset kjagiello:BETS failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:false
+--rollback drop table BETS;
 CREATE TABLE BETS
 (
    ID              NUMBER NOT NULL,

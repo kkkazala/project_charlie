@@ -1,4 +1,6 @@
 --liquibase formatted sql
+--changeset kjagiello:programs failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:false
+--rollback drop table PROGRAMS;
 CREATE TABLE PROGRAMS
 (
    ID              NUMBER NOT NULL,

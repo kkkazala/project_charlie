@@ -1,3 +1,6 @@
+--liquibase formatted sql
+--changeset kjagiello:PROMOTIONS failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:false
+--rollback drop table PROMOTIONS;
 CREATE TABLE PROMOTIONS
 (
    ID                   NUMBER        NOT NULL,

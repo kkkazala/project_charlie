@@ -1,4 +1,6 @@
 --liquibase formatted sql
+--changeset kjagiello:CALCULATED_SALES_COMMISSIONS failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:false
+--rollback drop table CALCULATED_SALES_COMMISSIONS;
 CREATE TABLE CALCULATED_SALES_COMMISSIONS
 (
    ID                NUMBER NOT NULL,
