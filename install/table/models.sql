@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset kjagiello:MODELS failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:false
+--changeset kjagiello:MODELS2 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:true
 --rollback drop table MODELS;
 CREATE TABLE MODELS
 (
@@ -10,5 +10,3 @@ CREATE TABLE MODELS
 COMMENT ON TABLE MODELS          IS 'Dane dot. modelu prowizyjnego';
 COMMENT ON COLUMN MODELS.ID      IS 'Identyfikator modelu';
 COMMENT ON COLUMN MODELS.FORMULA IS 'Wzór do wyliczania prowizji';
-
-ALTER TABLE MODELS ADD CONSTRAINT PK_MODELS PRIMARY KEY (ID);

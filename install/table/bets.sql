@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset kjagiello:BETS failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:false
+--changeset kjagiello:BETS2 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:true
 --rollback drop table BETS;
 CREATE TABLE BETS
 (
@@ -20,8 +20,3 @@ COMMENT ON COLUMN BETS.DATE_OF_BET     IS 'Data zakładu';
 COMMENT ON COLUMN BETS.ORGANIZATION_ID IS 'Identyfikator organizacji sportowej (klucz obcy)';
 COMMENT ON COLUMN BETS.BET_TYPE_ID     IS 'Identyfikator typu zakładu (klucz obcy)';
 COMMENT ON COLUMN BETS.PROMOTION_ID    IS 'Identyfikator promocji (klucz obcy)';
-
-ALTER TABLE BETS ADD CONSTRAINT PK_BETS PRIMARY KEY (ID);
-ALTER TABLE BETS ADD CONSTRAINT FK1_BETS FOREIGN KEY (ORGANIZATION_ID) REFERENCES SPORTS_ORGANIZATIONS (ID);
-ALTER TABLE BETS ADD CONSTRAINT FK2_BETS FOREIGN KEY (BET_TYPE_ID) REFERENCES BET_TYPES (ID);
-ALTER TABLE BETS ADD CONSTRAINT FK3_BETS FOREIGN KEY (PROMOTION_ID) REFERENCES PROMOTIONS (ID);

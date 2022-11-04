@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset kjagiello:PROMOTIONS failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:false
+--changeset kjagiello:PROMOTIONS2 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:true
 --rollback drop table PROMOTIONS;
 CREATE TABLE PROMOTIONS
 (
@@ -12,5 +12,3 @@ COMMENT ON TABLE PROMOTIONS                       IS 'Dane dot. promocji';
 COMMENT ON COLUMN PROMOTIONS.ID                   IS 'Identyfikator promocji';
 COMMENT ON COLUMN PROMOTIONS.NAME                 IS 'Nazwa promocji';
 COMMENT ON COLUMN PROMOTIONS.PROMOTION_MULTIPLIER IS 'Mnożnik promocji';
-
-ALTER TABLE PROMOTIONS ADD CONSTRAINT PK_PROMOTIONS PRIMARY KEY (ID);

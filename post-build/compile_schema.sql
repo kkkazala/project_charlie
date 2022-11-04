@@ -17,8 +17,8 @@ begin
   where status = 'INVALID';
 
   if l_exists > 0 then
-    dbms_utility.compile_schema('AGREE');
-    dbms_utility.compile_schema('AGREE');
+    dbms_utility.compile_schema('WKSP_CHARLIEDEV');
+    dbms_utility.compile_schema('WKSP_CHARLIEDEV');
 
     for rec_invalid_object in lcu_invalid_objects loop
       l_compilation_errors := l_compilation_errors || chr(10) || ' ' || rpad(rec_invalid_object.object_type, 20) ||
@@ -27,7 +27,7 @@ begin
 
     if l_compilation_errors is not null
     then
-      l_compilation_errors := chr(10) || chr(10) || 'Invalid objects in schema ' || 'AGREE' ||
+      l_compilation_errors := chr(10) || chr(10) || 'Invalid objects in schema ' || 'WKSP_CHARLIEDEV' ||
                               ':' || l_compilation_errors;
       raise_application_error(-20000, l_compilation_errors || chr(10));
     end if;

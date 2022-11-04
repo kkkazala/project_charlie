@@ -4,14 +4,12 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
 
-    <!-- <include file="./install/table/dict_roles.sql" /> -->
     <include file="./install/table/test_table.sql" />
     <include file="./install/table/bet_types.sql" />
     <include file="./install/table/bets.sql" />
     <include file="./install/table/calculated_sales_commissions.sql" />
-  <!--   <include file="./install/table/models.sql" /> -->
+    <include file="./install/table/models.sql" />
     <include file="./install/table/programs.sql" />
     <include file="./install/table/promotions.sql" />
     <include file="./install/table/sports_organization.sql" />
 </databaseChangeLog>
-

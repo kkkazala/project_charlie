@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset kjagiello:CALCULATED_SALES_COMMISSIONS failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:false
+--changeset kjagiello:CALCULATED_SALES_COMMISSIONS2 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:true
 --rollback drop table CALCULATED_SALES_COMMISSIONS;
 CREATE TABLE CALCULATED_SALES_COMMISSIONS
 (
@@ -12,6 +12,3 @@ COMMENT ON TABLE CALCULATED_SALES_COMMISSIONS                    IS 'Dane dot. w
 COMMENT ON COLUMN CALCULATED_SALES_COMMISSIONS.ID                IS 'Identyfikator wyliczonej prowizji';
 COMMENT ON COLUMN CALCULATED_SALES_COMMISSIONS.PROGRAM_ID        IS 'Identyfikator programu prowizyjnego (klucz obcy)';
 COMMENT ON COLUMN CALCULATED_SALES_COMMISSIONS.CALCULATED_AMOUNT IS 'Wyliczona kwota';
-
-ALTER TABLE CALCULATED_SALES_COMMISSIONS ADD CONSTRAINT PK_CALCULATED_SALES_COMMISSIONS PRIMARY KEY (ID);
-ALTER TABLE CALCULATED_SALES_COMMISSIONS ADD CONSTRAINT FK1_CALCULATED_SALES_COMMISSIONS FOREIGN KEY (PROGRAM_ID) REFERENCES PROGRAMS (ID);
