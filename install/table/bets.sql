@@ -1,3 +1,4 @@
+--liquibase formatted sql
 CREATE TABLE BETS
 (
    ID              NUMBER NOT NULL,

@@ -1,3 +1,4 @@
+--liquibase formatted sql
 CREATE TABLE CALCULATED_SALES_COMMISSIONS
 (
    ID                NUMBER NOT NULL,

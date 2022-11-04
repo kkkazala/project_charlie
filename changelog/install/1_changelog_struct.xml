@@ -6,6 +6,6 @@
 
     <!-- <include file="./install/table/dict_roles.sql" /> -->
     <include file="./install/table/test_table.sql" />
-
+    <include file="./install/table/bet_types.sql" />
 </databaseChangeLog>
 

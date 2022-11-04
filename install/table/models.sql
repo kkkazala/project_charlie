@@ -1,3 +1,4 @@
+--liquibase formatted sql
 CREATE TABLE MODELS
 (
    ID      NUMBER         NOT NULL,

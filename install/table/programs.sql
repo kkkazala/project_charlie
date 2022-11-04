@@ -1,3 +1,4 @@
+--liquibase formatted sql
 CREATE TABLE PROGRAMS
 (
    ID              NUMBER NOT NULL,

@@ -1,3 +1,6 @@
+--liquibase formatted sql
+--changeset kjagiello:bet_types failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:false
+--rollback drop table BET_TYPES;
 CREATE TABLE BET_TYPES
 (
    ID              NUMBER        NOT NULL,
