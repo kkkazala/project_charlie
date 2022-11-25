@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset kjagiello:PROMOTIONS5 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:true
+--changeset kjagiello:PROMOTIONS5 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true
 --rollback drop table PROMOTIONS;
 CREATE TABLE PROMOTIONS
 (

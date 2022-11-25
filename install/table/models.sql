@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset kjagiello:MODELS5 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:true
+--changeset kjagiello:MODELS5 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true
 --rollback drop table MODELS;
 CREATE TABLE MODELS
 (

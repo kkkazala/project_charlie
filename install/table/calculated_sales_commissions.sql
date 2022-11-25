@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset kjagiello:CALCULATED_SALES_COMMISSIONS5 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:true
+--changeset kjagiello:CALCULATED_SALES_COMMISSIONS5 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true
 --rollback drop table CALCULATED_SALES_COMMISSIONS;
 CREATE TABLE CALCULATED_SALES_COMMISSIONS
 (

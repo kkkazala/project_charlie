@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset kjagiello:SPORTS_ORGANIZATIONS5 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:true
+--changeset kjagiello:SPORTS_ORGANIZATIONS5 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true
 --rollback drop table SPORTS_ORGANIZATIONS;
 CREATE TABLE SPORTS_ORGANIZATIONS
 (

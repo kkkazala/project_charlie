@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset kjagiello:PROGRAMS5 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:true
+--changeset kjagiello:PROGRAMS5 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true
 --rollback drop table PROGRAMS;
 CREATE TABLE PROGRAMS
 (
