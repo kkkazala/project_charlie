@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset kjagiello:BETS5 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:true
+--changeset kjagiello:BETS5 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true
 --rollback drop table BETS;
 CREATE TABLE BETS
 (

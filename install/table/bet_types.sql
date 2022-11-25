@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset kjagiello:BET_TYPES2 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:true
+--changeset kjagiello:BET_TYPES2 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true
 --rollback drop table BET_TYPES;
 CREATE TABLE BET_TYPES
 (
