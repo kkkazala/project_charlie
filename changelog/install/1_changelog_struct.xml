@@ -11,6 +11,6 @@
     <include file="./install/table/models.sql" />
     <include file="./install/table/programs.sql" />
     <include file="./install/table/promotions.sql" />
-    <include file="./install/table/sports_organization.sql" />
+    <include file="./install/table/sports_leagues.sql" />
     <include file="./latest/view/BETS_V.sql" />
 </databaseChangeLog>
