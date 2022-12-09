@@ -12,5 +12,6 @@
     <include file="./install/table/programs.sql" />
     <include file="./install/table/promotions.sql" />
     <include file="./install/table/sports_leagues.sql" />
+    <include file="./install/table/teams.sql" />
     <include file="./latest/view/BETS_V.sql" />
 </databaseChangeLog>
