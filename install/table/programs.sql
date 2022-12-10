@@ -16,3 +16,10 @@ COMMENT ON COLUMN PROGRAMS.MODEL_ID        IS 'Identyfikator modelu prowizyjnego
 COMMENT ON COLUMN PROGRAMS.ORGANIZATION_ID IS 'Identyfikator organizacji sportowej (klucz obcy)';
 COMMENT ON COLUMN PROGRAMS.DATE_FROM       IS 'Data rozpoczęcia';
 COMMENT ON COLUMN PROGRAMS.DATE_TO         IS 'Data zakończenia';
+
+
+--changeset kkazala:PROGRAM6 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true
+--comment dodanie kolumny z nazwą
+--rollback ALTER TABLE WKSP_CHARLIEDEV.PROGRAMS DROP COLUMN NAME; COMMIT;
+ALTER TABLE WKSP_CHARLIEDEV.PROGRAMS ADD (NAME VARCHAR2(255));
+COMMENT ON COLUMN WKSP_CHARLIEDEV.PROGRAMS.DATE_TO IS 'Nazwa programu';
