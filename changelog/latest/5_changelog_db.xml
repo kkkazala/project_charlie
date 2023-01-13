@@ -9,6 +9,8 @@
   <changeSet id="models_pkg" author="kkazala" runOnChange="true">
     <sqlFile splitStatements="false" path="./latest/package/MODELS_BODY_PKG.sql" encoding="UTF-8" />
     <sqlFile splitStatements="false" path="./latest/package/MODELS_SPEC_PKG.sql" encoding="UTF-8" />
+    <sqlFile splitStatements="false" path="./latest/package/SESSIONS_BODY_PKG.sql" encoding="UTF-8" />
+    <sqlFile splitStatements="false" path="./latest/package/SESSIONS_SPEC_PKG.sql" encoding="UTF-8" />
   </changeSet>
   <!-- END: models_pkg -->
 
