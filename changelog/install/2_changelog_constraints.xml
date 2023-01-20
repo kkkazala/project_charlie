@@ -10,7 +10,6 @@
       <include file="./install/constraint/fk_bets_bet_types.sql" />
       <include file="./install/constraint/fk_bets_promotions.sql" />
       <include file="./install/constraint/fk_bets_sports_leagues.sql" />
-      <include file="./install/constraint/fk_calculated_sales_commissions_programs.sql" />
       <include file="./install/constraint/fk_programs_models.sql" />
       <include file="./install/constraint/fk_programs_sports_leagues.sql" />
       <include file="./install/constraint/fk_teams_sports_leagues.sql" />
