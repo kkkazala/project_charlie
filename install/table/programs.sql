@@ -23,3 +23,9 @@ COMMENT ON COLUMN PROGRAMS.DATE_TO         IS 'Data zakończenia';
 --rollback ALTER TABLE WKSP_CHARLIEDEV.PROGRAMS DROP COLUMN NAME; COMMIT;
 ALTER TABLE WKSP_CHARLIEDEV.PROGRAMS ADD (NAME VARCHAR2(255));
 COMMENT ON COLUMN WKSP_CHARLIEDEV.PROGRAMS.DATE_TO IS 'Nazwa programu';
+
+--changeset kkazala:PROGRAM7 failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true
+--comment dodanie kolumny z datą ostatniego uruchomienia programu
+--rollback ALTER TABLE WKSP_CHARLIEDEV.PROGRAMS DROP COLUMN LAST_START; COMMIT;
+ALTER TABLE WKSP_CHARLIEDEV.PROGRAMS ADD (LAST_START VARCHAR2(255));
+COMMENT ON COLUMN WKSP_CHARLIEDEV.PROGRAMS.LAST_START IS 'Data ostatniego uruchomienia programu';
