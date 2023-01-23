@@ -1,5 +1,0 @@
-
-  CREATE OR REPLACE EDITIONABLE TYPE "T_SPLIT_BY_COLON_REC" as object (
-val varchar2(100)
-);
-/

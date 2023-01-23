@@ -1,6 +1,3 @@
---liquibase formatted sql
---changeset kkazala:DS_LEAGUES failOnError:true stripComments:false splitStatements:true rollbackSplitStatements:true runOnChange:false
---rollback TRUNCATE TABLE SPORTS_LEAGUES;;
 INSERT INTO WKSP_CHARLIEDEV.SPORTS_LEAGUES(NAME, MODIFIER) VALUES ('Nigeria Premier League', 1.2);
 INSERT INTO WKSP_CHARLIEDEV.SPORTS_LEAGUES(NAME, MODIFIER) VALUES ('Romania Cup', 3.2);
 INSERT INTO WKSP_CHARLIEDEV.SPORTS_LEAGUES(NAME, MODIFIER) VALUES ('Ivory Coast Premier Division', 1.7);
